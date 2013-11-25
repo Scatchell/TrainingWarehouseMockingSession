@@ -27,5 +27,7 @@ public class Warehouse {
         }
     }
 
-
+    public boolean hasInventory(String orderName, int orderSize) {
+        return orders.containsKey(orderName) ? orders.get(orderName) >= orderSize : false;
+    }
 }
