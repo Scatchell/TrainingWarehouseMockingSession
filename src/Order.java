@@ -10,7 +10,6 @@ public class Order {
         this.size = size;
     }
 
-
     public void fill(Warehouse warehouse) throws OrderDoesNotExistException {
         if (warehouse.hasInventory(name, size)){
             warehouse.remove(name, size);
